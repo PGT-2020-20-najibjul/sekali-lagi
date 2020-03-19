@@ -23,7 +23,7 @@
 				$nimi = $nim;
 				$pass= $password;
 
-				$cek = $this->login_model->cek_login($nimi,$pass);
+				$cek = $this->Login_model->cek_login($nimi,$pass);
 
 				if($cek->num_rows() > 0){
 					foreach ($cek->result() as $ck ) {
@@ -45,4 +45,3 @@
 			}
 		}
 	}
- ?>
